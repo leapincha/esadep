@@ -40,7 +40,18 @@ class Salvamento extends MY_Controller {
     
   }
 
+  public function reglamento()
+  {
+    $this->load->model("reglamento");
 
+    $data['active'] = "salvamento";
+    $data['sub_active'] = "reglamento";
+
+    $data['reglamento'] = $this->reglamento->read("descripcion,reglamento","id_reglamento","DESC",1);
+
+    $this->display("web/reglamento", $data);
+
+  }
 
 
 
