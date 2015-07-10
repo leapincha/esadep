@@ -180,32 +180,6 @@ jQuery(window).load(function() {
 	
 	$(window).on('resize', function(){ $('.portfolio-masonry').masonry(); });
 	
-	// image popup	
-	$('.portfolio-box img').magnificPopup({
-		type: 'image',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: 'The image could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.siblings('.portfolio-box-text').find('h3').text();
-			}
-		},
-		callbacks: {
-			elementParse: function(item) {				
-				if(item.el.hasClass('portfolio-video')) {
-					item.type = 'iframe';
-					item.src = item.el.data('portfolio-video');
-				}
-				else {
-					item.type = 'image';
-					item.src = item.el.attr('src');
-				}
-			}
-		}
-	});
+	
 	
 });

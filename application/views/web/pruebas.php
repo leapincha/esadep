@@ -27,17 +27,22 @@
 	            	<?	}
 	            	?>
 	               <div class="col-sm-3 portfolio-masonry">
+	               	<a href="<?= base_url(); ?>pruebas/ver/<?php echo $sub_active; ?>/<?php echo $data->id_prueba; ?>">
 	            	<div class="portfolio-box <?php echo $data->tipo_prueba;?>">
+	            		
 	            		<div class="portfolio-box-container">
-	            			<img src="/assets/web/images/pruebas/<?php echo $sub_active; ?>/<?php echo $data->foto; ?>" alt="" data-at2x="/assets/web/images/pruebas/<?php echo $sub_active; ?>/<?php echo $data->foto; ?>">
+	            			
+	            			<img src="/assets/web/images/pruebas/<?php echo $sub_active; ?>/<?php echo $data->foto; ?>">
 	            			<div class="portfolio-box-text">
 			                	<h3><?php echo $data->nombre; ?></h3>
 			                	<p><?php echo $data->intro; ?></p>
 			            	</div>
+			            	
 			        	</div>
 	            
-
+			        	
 	            	</div>
+	            	</a>
 	               </div>
 	            <? if($i==3){?>
 						</div>
@@ -59,7 +64,9 @@
 	            	<?	}
 	            	?>
 	               <div class="col-sm-3 portfolio-masonry">
+	               	<a href="<?= base_url(); ?>pruebas/ver/<?php echo $sub_active; ?>/<?php echo $data->id_prueba; ?>">
 	            	<div class="portfolio-box <?php echo $datos->tipo_prueba;?>">
+	            		
 	            		<div class="portfolio-box-container">
 	            			<img src="/assets/web/images/pruebas/<?php echo $sub_active; ?>/<?php echo $datos->foto; ?>" alt="" data-at2x="/assets/web/images/pruebas/<?php echo $sub_active; ?>/<?php echo $datos->foto; ?>">
 	            			<div class="portfolio-box-text">
@@ -67,9 +74,11 @@
 			                	<p><?php echo $data->intro; ?></p>
 			            	</div>
 			        	</div>
+			        	
 	            
 
 	            	</div>
+	            	</a>
 	               </div>
 	            <? if($i==3){?>
 						</div>

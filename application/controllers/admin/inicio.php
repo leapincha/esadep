@@ -197,9 +197,7 @@ class Inicio extends CI_Controller {
 		$crud->display_as('nombre_prueba','Nombre Prueba')
 			 ->display_as('descripcion','Descripcion Prueba')
 			 ->display_as('tipo_prueba','Tipo de Prueba')
-			 ->display_as('foto','Foto')
-			 ->display_as('link_galeriafb','Link Galeria FAcebook')
-			 ->display_as('youtube','Video de Youtube');
+			 ->display_as('foto','Foto');
 
 		$crud->set_field_upload('foto','assets/web/images/pruebas/abiertas');
 		$crud->set_subject('Pruebas Abiertas');
@@ -226,9 +224,7 @@ class Inicio extends CI_Controller {
 			 ->display_as('introduccion','Introduccion')
 			 ->display_as('descripcion','Descripcion Prueba')
 			 ->display_as('tipo_prueba','Tipo de Prueba')
-			 ->display_as('foto','Foto')
-			 ->display_as('link_galeriafb','Link Galeria FAcebook')
-			 ->display_as('youtube','Video de Youtube');
+			 ->display_as('foto','Foto');
 
 		$crud->set_field_upload('foto','assets/web/images/pruebas/cerradas');
 		$crud->set_subject('Pruebas Cerradas');

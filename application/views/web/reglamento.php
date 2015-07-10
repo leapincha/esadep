@@ -18,7 +18,7 @@
         <div class="about-us-container">
         	<div class="container">
 	            <div class="row">
-	                <div class="col-sm-12 about-us-text wow fadeInLeft">
+	                <div class="col-sm-12 about-us-text">
 
 
                         <?php foreach($reglamento as $reglament): ?>  

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 10-07-2015 a las 14:22:20
+-- Tiempo de generación: 07-07-2015 a las 14:03:37
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.8
 
@@ -159,10 +159,8 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('2833a41fdb7a8c7616a372a958d6f403', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (K', 1436545074, ''),
-('79237338c5eaf24a8e2d60be631ef375', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; rv:39.0) Gecko/201001', 1436548842, 'a:0:{}'),
-('ab8c472387c4bda5852650be10823620', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (K', 1436544947, ''),
-('f900e9ee7dd39d04727b03cb138cee68', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; rv:39.0) Gecko/201001', 1436544753, 'a:2:{s:9:"idusuario";s:1:"1";s:13:"nombreusuario";s:3:"lea";}');
+('07679655dc2c9f1e0410ff467314c1ea', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1; rv:39.0) Gecko/201001', 1436284754, 'a:1:{s:9:"idusuario";s:1:"1";}'),
+('9d62c89fb9b886fe6efb41e8702d6632', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (K', 1436288283, 'a:0:{}');
 
 -- --------------------------------------------------------
 
