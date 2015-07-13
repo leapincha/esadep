@@ -46,6 +46,7 @@ a:hover
 							<li class="<?= ($subtitle == "quienes") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/quienes')?>'>¿Quienes Somos?</a></li>
 							<li class="<?= ($subtitle == "historia") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/historia')?>'>Historia</a></li>
 							<li class="<?= ($subtitle == "comision") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/comision')?>'>Comision Directiva</a></li>
+							<li class="<?= ($subtitle == "equipos") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/equipos')?>'>Equipos</a></li>
 						</ul>
 					</li>
 

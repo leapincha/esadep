@@ -42,6 +42,7 @@ $route['default_controller'] = "inicio";
 $route['quienes-somos'] = 'inicio/quienes';
 $route['historia'] = 'inicio/historia';
 $route['comision-directiva'] = 'inicio/comision_directiva';
+$route['equipos'] = 'inicio/equipos';
 $route['admin'] = 'admin/login';
 
 

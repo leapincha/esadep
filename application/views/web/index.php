@@ -30,64 +30,67 @@
                             </ul>
                         </div>
                     </div>
+                    <br>
+                    <hr>
+                    <div class="equipos eventos">
 
-                    <div class="row">
-                            <div class="col-sm-6 col-md-6">
-                                <div class="thumbnail">
-                                    <img src="/assets/web/images/categorias/kids.jpg" alt="...">
-                                    <div class="caption">
-                                        <h3>KIDS</h3>
-                                        <p>Son niños que ya poseen conocimientos de natación y fomentamos en ellos el salvamento en edades tempranas</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-                                    </div>
-                                </div>
+                    <div class="widget-header">
+                    <h4>EQUIPOS DE ESADEP</h4>
 
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                                <div class="thumbnail">
-                                    <img src="/assets/web/images/categorias/juveniles.jpg" alt="...">
-                                    <div class="caption">
-                                        <h3>JUVENILES</h3>
-                                        <p>Jóvenes adolescentes que ya incursionan en el ámbito del salvamento y anhelan ser guardavidas en algún momento</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-                                    </div>
-                                </div>
-
-                            </div>
                     </div>
-                                        <div class="row">
-                            <div class="col-md-4">
+                    <br>
+                        <?php 
+                        $i=1;
+                        foreach ($equipo as $equip){ 
+
+                        if($i==1 || $i==3){ ?>
+                        <div class="row">
+
+
+                      <?php   } 
+                        if($i==1 || $i==2){ ?>
+                        <div class="col-sm-6 col-md-6">
                                 <div class="thumbnail">
-                                    <img src="/assets/web/images/categorias/masters.jpg" alt="...">
+                                    <img src="/assets/web/images/categorias/<?php echo $equip->foto; ?>" alt="...">
                                     <div class="caption">
-                                        <h3>MASTERS</h3>
-                                        <p>Ellos suelen venir a contagiarse de la energía que hay en el equipo pero son los que más aportan ya que nos transmiten toda su experiencia y valores de vida</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                                        <h3><?php echo $equip->nombre_equipo; ?></h3>
+                                        <p><?php echo $equip->descripcion; ?></p>
+                                        
                                     </div>
                                 </div>
 
                             </div>
+                      <?php    } else { ?>
                             <div class="col-md-4">
-                             <div class="thumbnail">
-                                    <img src="/assets/web/images/categorias/absoluto.jpg" alt="...">
+                                <div class="thumbnail">
+                                    <img src="/assets/web/images/categorias/<?php echo $equip->foto; ?>" alt="...">
                                     <div class="caption">
-                                        <h3>ABSOLUTO</h3>
-                                        <p>Son todos aquellos guardavidas y/o interesados en el Salvamento Acuático en cualquiera de sus facetas. Por la edad que comprenden suelen ser considerados como la categoría mas fuerte.</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                                        <h3><?php echo $equip->nombre_equipo; ?></h3>
+                                        <p><?php echo $equip->descripcion; ?></p>
+                                        
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="col-md-4">
-                             <div class="thumbnail">
-                                    <img src="/assets/web/images/categorias/alto_rendimiento.jpg" alt="...">
-                                    <div class="caption">
-                                        <h3>ALTO RENDIMIENTO</h3>
-                                        <p>Preparamos deportistas que deseen desempeñarse al máximo y destacarse en esta disciplina</p>
-                                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <?php
+                      }
+                      ?>
+
+
+                     <?php if ($i==2 || $i==5){ ?>
+                 </div>
+
+                    <?php }
+                    $i++;
+                    }
+
+                         ?>
+
+                    
+                            
+
+                    </div>
 
                        
 

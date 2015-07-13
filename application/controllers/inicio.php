@@ -34,9 +34,11 @@ class Inicio extends MY_Controller {
 
         $this->load->model("eventos");
         $this->load->model("sponsors");
+        $this->load->model("equipos");
 
         $data['sponsors']= $this->sponsors->read("link_web, foto",'id_sponsor','ASC');
         $events = $this->eventos->current_eventos("id_evento, fecha, nombre, lugar, foto","fecha","ASC", 5);
+        $data['equipo'] = $this->equipos->read("id_equipo,nombre_equipo,descripcion,foto","id_equipo","ASC");
         $data["noticias"] = $this->noticias->read_noti("id_noticia,titulo, SUBSTR(copete, 1, 190) as copete,foto", 'id_noticia', 'DESC',4);
 
         
@@ -109,13 +111,24 @@ class Inicio extends MY_Controller {
 		$data['active'] = "esadep";
     $data['sub_active'] = "cd";
 
-        $data['titulo'] ="Comisión Directiva";
+    $data['titulo'] ="Comisión Directiva";
 
         
        	
-       	$this->display("web/comision-directiva", $data);
+    $this->display("web/comision-directiva", $data);
 
 	}
+
+  public function equipos()
+  {
+    $this->load->model("equipos");
+    $data['active'] = "esadep";
+    $data['sub_active'] = "equipos";
+
+    $data['equipo'] = $this->equipos->read("id_equipo,nombre_equipo,descripcion","id_equipo","ASC");
+
+    $this->display("web/equipos", $data);
+  }
 
 
   public function nombremes($mes){

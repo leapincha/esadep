@@ -367,6 +367,33 @@ class Inicio extends CI_Controller {
 
 	}
 
+	public function equipos()
+	{
+		$crud = new grocery_CRUD();
+
+		$crud->set_table('equipos');
+		$crud->columns( 'nombre_equipo','descripcion','foto');
+		$crud->display_as('nombre_equipo','Nombre Equipo')
+			 ->display_as('descripcion','Descripcion')
+			 ->display_as('foto','Foto');
+
+		$crud->set_field_upload('foto','assets/web/images/categorias');
+		$crud->set_subject('Equipos ESADEP');
+
+
+		$output = $crud->render();
+
+
+		$data = array(
+                    'title' => "esadep",
+                    'subtitle' => "equipos",                                    
+                    'output'      =>  $output,
+                );
+
+        $this->_example_output($data); 
+
+	}
+
 
 
 

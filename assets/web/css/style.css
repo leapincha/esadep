@@ -1336,3 +1336,43 @@ hr{
     margin-top: 20px;
     text-align: left;
 }
+
+.equipos{
+    padding-top: 30px;
+    padding-right: 0px;
+}
+
+.equipos h3{
+    color: #222222;
+    font-family: Raleway-Medium;
+    font-size: 20px;
+}
+
+.equipos p{
+    color: #515455;
+    font-family: Raleway-Medium;
+    font-size: 14px;
+}
+
+.equipos .thumbnail{
+    background-color: #81CBF3;
+    -webkit-box-shadow: 0px 18px 17px -8px rgba(166,158,166,1);
+-moz-box-shadow: 0px 18px 17px -8px rgba(166,158,166,1);
+box-shadow: 0px 18px 17px -8px rgba(166,158,166,1);
+}
+
+.fechas .icon-overlay a img{
+    -webkit-box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75); 
+}
+
+.equipos.eventos h4{
+    text-align: center;
+    margin-left: 0;
+}
+
+.btn-primary{
+    background-color: #48a0df;
+}
+
