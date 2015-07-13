@@ -19,6 +19,7 @@
         <?php  
             foreach($results as $data){ ?>
                 <div class="row">
+                    <a href="<?= base_url(); ?>evento/ver/<?php echo $data->id_evento; ?>">
                     <div class="col-sm-4">
                         <img class="img-responsive foto-eventos" src="/assets/web/images/eventos/<?php echo $data->foto;  ?>" alt="">
                     </div>
@@ -39,6 +40,7 @@
                             <!--<span class="btn btn-primary" href="#">Ver Evento</span> -->
                         </div>
                     </div>
+                </a>
                 </div>
                 <hr>
 

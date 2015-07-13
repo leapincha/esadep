@@ -10,7 +10,18 @@
 				<div class="nota-heading">
 					<h1><?php echo $notici->titulo; ?></h1>
 					<p class="lead"><?php echo $notici->copete; ?></p>
-					<p><span class="glyphicon glyphicon-time"></span><?php echo $notici->fecha; ?></p>
+
+
+    				<?php
+    //formato fecha americana
+    					$fecha1= $notici->fecha;;
+    					$fecha2=date("d-m-Y",strtotime($fecha1));
+    //El nuevo valor de la variable: $fecha2="20-10-2008"
+    					
+    				?>
+
+
+					<p><span class="glyphicon glyphicon-time"></span>  <?php echo $fecha2; ?></p>
 					
 				<hr>
 				</div>

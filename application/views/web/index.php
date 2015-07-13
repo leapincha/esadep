@@ -35,7 +35,7 @@
                     <div class="equipos eventos">
 
                     <div class="widget-header">
-                    <h4>EQUIPOS DE ESADEP</h4>
+                    <h4>Categorías DE ESADEP</h4>
 
                     </div>
                     <br>

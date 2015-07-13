@@ -8,7 +8,7 @@
 				
 
 				<div class="nota-heading">
-					<h1>Equipos ESADEP</h1>
+					<h1>Categorías ESADEP</h1>
 					<p class="lead"></p>
 					
 					

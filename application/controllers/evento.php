@@ -8,6 +8,7 @@ class Evento extends MY_Controller {
         $this->load->model('eventos');
         $this->load->library("pagination");
         $this->load->helper('date');
+        
       
     }
 
@@ -36,9 +37,23 @@ class Evento extends MY_Controller {
 
 	
 
-	public function ver($id_nota)
+	public function ver($id_evento)
 	{
+        $data['active'] = "eventos";
+        $data['sub_active'] = "";
 
+        
+        $events = $this->eventos->get("id_evento,nombre,descripcion,fecha,foto,lugar", NULL, 'ASC', NULL, 0, "id_evento = $id_evento");
+
+
+
+        $data['events'] = $events;
+
+
+       
+
+
+        $this->display("web/evento-view",$data);   
 		
 
 	}

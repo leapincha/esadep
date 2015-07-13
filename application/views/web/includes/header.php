@@ -65,7 +65,7 @@
                                 <li class="<?= ($sub_active == "quienes") ? "active" : "" ?>"><a href="<?= base_url(); ?>quienes-somos">¿Quienes Somos?</a></li>
                                 <li class="<?= ($sub_active == "historia") ? "active" : "" ?>"><a href="<?= base_url(); ?>historia">Historia</a></li>
                                 <li class="<?= ($sub_active == "cd") ? "active" : "" ?>"><a href="<?= base_url(); ?>comision-directiva">Comisión Directiva</a></li>
-                                <li class="<?= ($sub_active == "equipos") ? "active" : "" ?>"><a href="<?= base_url(); ?>equipos">Equipos</a></li>
+                                <li class="<?= ($sub_active == "equipos") ? "active" : "" ?>"><a href="<?= base_url(); ?>equipos">Categorías</a></li>
                             </ul>
                         </li>
                         <li class="<?= ($active == "noticias") ? "active" : "" ?>">

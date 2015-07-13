@@ -77,6 +77,15 @@ a:hover
 					</li>
 
 					<li class="<?= ($title == "servicios") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/servicios')?>'>Servicios</a></li>
+										<li class="dropdown <?= ($title == "contacto") ? "active" : "" ?>"><a href='#' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="<?= ($subtitle == "info") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/info_contacto')?>'>Info. Contacto</a></li>
+							<li class="<?= ($subtitle == "contacto") ? "active" : "" ?>"><a href='<?php echo base_url('admin/inicio/contacto')?>'>Consultas</a></li>
+							
+						</ul>
+
+					</li>
+					
 					
 				</ul>
 

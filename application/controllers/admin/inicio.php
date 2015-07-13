@@ -394,12 +394,61 @@ class Inicio extends CI_Controller {
 
 	}
 
+	public function contacto()
+	{
+		$crud = new grocery_CRUD();
+
+		$crud->set_table('contacto');
+		$crud->columns( 'usuario','email','mensaje');
+		$crud->display_as('usuario','Nombre')
+			 ->display_as('email','Mail')
+			 ->display_as('mensaje','Mensaje');
+
+		
+		$crud->set_subject('Consultas');
+		$crud->unset_add();
+		$crud->unset_delete();
 
 
+		$output = $crud->render();
 
 
+		$data = array(
+                    'title' => "contacto",
+                    'subtitle' => "contacto",                                    
+                    'output'      =>  $output,
+                );
+
+        $this->_example_output($data); 
+
+	}
+
+public function info_contacto()
+	{
+		$crud = new grocery_CRUD();
+
+		$crud->set_table('info_contacto');
+		$crud->columns( 'descripcion');
+		$crud->display_as('descripcion','Descripcion');
+
+		
+		$crud->set_subject('Información de Contacto');
+		$crud->unset_add();
+		$crud->unset_delete();
 
 
+		$output = $crud->render();
+
+
+		$data = array(
+                    'title' => "contacto",
+                    'subtitle' => "info",                                    
+                    'output'      =>  $output,
+                );
+
+        $this->_example_output($data); 
+
+	}
 
 
 }
